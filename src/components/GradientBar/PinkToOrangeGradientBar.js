@@ -12,13 +12,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const PinkToOrangeGradientBar = () => (
+const GreenToBlueGradientBar = () => (
   <LinearGradient
     start={{ x: 0, y: 0 }}
     end={{ x: 1, y: 0 }}
-    colors={['#2AF598', '#08AEEA']}
+    colors={['#E20473', '#FF4D43']}
     style={styles.gradientStyle}
   />
 );
 
-export default PinkToOrangeGradientBar;
+export default GreenToBlueGradientBar;

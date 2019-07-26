@@ -18,12 +18,16 @@ import {
   TextContainer,
   TimerText,
   TimerTextBold,
+  CarouselContainer,
+  ScrollCarousel,
+  CarouselCard,
+  CarouselTitle,
+  CarouselSub,
 } from './styles';
 
 import PinkToPurpleGradientBar from '~/components/GradientBar/PinkToPurpleGradientBar';
 import GreenToBlueGradientBar from '~/components/GradientBar/GreenToBlueGradientBar';
-
-import LectureCard from '~/components/LectureCard';
+import PinkToOrangeGradientBar from '~/components/GradientBar/PinkToOrangeGradientBar';
 
 const Main = () => (
   <Container contentContainerStyle={{alignItems: 'center'}}>
@@ -35,7 +39,7 @@ const Main = () => (
     <PinkToPurpleGradientBar />
     <Subtitle>{'De 30 de Setembro a 4 de Outubro\nde 2019. Você não pode perder.'}</Subtitle>
 
-    <Flow source={require('~/assets/images/flow2.png')}/>
+    <Flow source={require('~/assets/images/flow.png')} />
 
     <TimerContainer>
       <TextContainer>
@@ -75,13 +79,115 @@ const Main = () => (
     <Title>Palestras em destaque</Title>
     <GreenToBlueGradientBar />
 
-    <LectureCard />
-    <LectureCard />
-    <LectureCard />
-    <LectureCard />
-    <LectureCard />
-    <LectureCard />
-    <LectureCard />
+    <CarouselContainer>
+      <ScrollCarousel horizontal showsHorizontalScrollIndicator={false}>
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+      </ScrollCarousel>
+    </CarouselContainer>
+
+    <Title>Mini-Cursos em destaque</Title>
+    <PinkToOrangeGradientBar />
+    <CarouselContainer>
+      <ScrollCarousel horizontal showsHorizontalScrollIndicator={false}>
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+
+        <CarouselCard>
+          <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
+          <CarouselSub>Prof. Dr. Anderson de Rezende Rocha</CarouselSub>
+        </CarouselCard>
+      </ScrollCarousel>
+    </CarouselContainer>
 
   </Container>
 );

@@ -30,8 +30,8 @@ export const Subtitle = styled.Text`
 `;
 
 export const Flow = styled.Image`
-  height: 8%;
-  width: 150%;
+  height: 78px;
+  width: 100%;
 `;
 
 export const TimerContainer = styled.View`
@@ -42,7 +42,7 @@ export const TimerContainer = styled.View`
   height: 154px;
   width: 375px;
   background-color: #1C1735;
-  top: -25px;
+  margin-top: 25px;
   margin-bottom: 25px;
 `;
 
@@ -103,4 +103,35 @@ export const TimerText = styled(RegularText)`
 export const TimerTextBold = styled(BoldText)`
   font-size: 14px;
   font-weight: bold;
+`;
+
+export const CarouselContainer = styled.View`
+  height: 150px;
+  margin-bottom: 25px;
+`;
+
+export const ScrollCarousel = styled.ScrollView`
+`;
+
+export const CarouselCard = styled.View`
+  width: 150px;
+  height: 128px;
+  background-color: #1C1735;
+  border-radius: 8px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const CarouselTitle = styled(BoldText)`
+  text-align: center;
+  margin-top: 20px;
+`;
+
+export const CarouselSub = styled(RegularText)`
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.6;
+  margin-bottom: 20px;
 `;
