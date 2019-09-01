@@ -1,12 +1,12 @@
 import React from 'react';
 
+import Navbar from '~/components/Navbar';
+
 import {
   Container,
   Title,
   Subtitle,
   Flow,
-  Logo,
-  LogoContainer,
   TimerContainer,
   Days,
   Hours,
@@ -23,25 +23,39 @@ import {
   CarouselCard,
   CarouselTitle,
   CarouselSub,
+  SponsorsContainer,
+  GoldRow,
+  GoldLabel,
+  GoldSquare,
+  SilverRow,
+  SponsorLabel,
+  SquarsContainer,
+  SilverSquare,
+  SponsorLogo,
 } from './styles';
 
 import PinkToPurpleGradientBar from '~/components/GradientBar/PinkToPurpleGradientBar';
 import GreenToBlueGradientBar from '~/components/GradientBar/GreenToBlueGradientBar';
 import PinkToOrangeGradientBar from '~/components/GradientBar/PinkToOrangeGradientBar';
 
-const Main = () => (
-  <Container contentContainerStyle={{alignItems: 'center'}}>
-    <LogoContainer>
-      <Logo source={require('~/assets/images/entire_green.png')} />
-    </LogoContainer>
+import logoNic from '~/assets/images/logo_nic.png';
+import logoOpus from '~/assets/images/logo_opus.png';
+import logoHit from '~/assets/images/logo_hit.png';
+import logoPca from '~/assets/images/logo_pca.png';
+import logoWdg from '~/assets/images/logo_wdg.png';
 
-    <Title>Sua passagem pro futuro!</Title>
-    <PinkToPurpleGradientBar />
-    <Subtitle>{'De 30 de Setembro a 4 de Outubro\nde 2019. Você não pode perder.'}</Subtitle>
+export default function Home() {
+  return (
+    <Container contentContainerStyle={{alignItems: 'center'}}>
+      <Navbar />
 
-    <Flow source={require('~/assets/images/flow.png')} />
+      <Title>Sua passagem pro futuro!</Title>
+      <PinkToPurpleGradientBar />
+      <Subtitle>{'De 30 de Setembro a 4 de Outubro\nde 2019. Você não pode perder.'}</Subtitle>
 
-    <TimerContainer>
+      <Flow source={require('~/assets/images/flow.png')} />
+
+      <TimerContainer>
       <TextContainer>
         <TimerText>Ainda </TimerText>
         <TimerTextBold>faltam</TimerTextBold>
@@ -76,10 +90,10 @@ const Main = () => (
 
     </TimerContainer>
 
-    <Title>Palestras em destaque</Title>
-    <GreenToBlueGradientBar />
+      <Title>Palestras em destaque</Title>
+      <GreenToBlueGradientBar />
 
-    <CarouselContainer>
+      <CarouselContainer>
       <ScrollCarousel horizontal showsHorizontalScrollIndicator={false}>
         <CarouselCard>
           <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
@@ -133,9 +147,9 @@ const Main = () => (
       </ScrollCarousel>
     </CarouselContainer>
 
-    <Title>Mini-Cursos em destaque</Title>
-    <PinkToOrangeGradientBar />
-    <CarouselContainer>
+      <Title>Mini-Cursos em destaque</Title>
+      <PinkToOrangeGradientBar />
+      <CarouselContainer>
       <ScrollCarousel horizontal showsHorizontalScrollIndicator={false}>
         <CarouselCard>
           <CarouselTitle>Nome da palestra que vai acontecer</CarouselTitle>
@@ -189,7 +203,40 @@ const Main = () => (
       </ScrollCarousel>
     </CarouselContainer>
 
-  </Container>
-);
+      <Title>Patrocínios</Title>
+      <PinkToOrangeGradientBar />
 
-export default Main;
+      <SponsorsContainer>
+
+        <GoldRow>
+          <GoldLabel>Gold</GoldLabel>
+          <GoldSquare>
+            <SponsorLogo source={logoNic} />
+          </GoldSquare>
+        </GoldRow>
+
+        <SilverRow>
+          <SponsorLabel>Prata</SponsorLabel>
+
+          <SquarsContainer>
+            <SilverSquare>
+              <SponsorLogo source={logoOpus} />
+            </SilverSquare>
+
+            <SilverSquare>
+              <SponsorLogo source={logoHit} />
+            </SilverSquare>
+
+            <SilverSquare>
+              <SponsorLogo source={logoPca} />
+            </SilverSquare>
+
+            <SilverSquare>
+              <SponsorLogo source={logoWdg} />
+            </SilverSquare>
+          </SquarsContainer>
+        </SilverRow>
+      </SponsorsContainer>
+    </Container>
+  );
+}
