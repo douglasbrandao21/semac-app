@@ -25,9 +25,9 @@ export const DateTitle = styled(BoldText)`
 `;
 
 export const Separator = styled.View`
-  height: 1px;
+  height: 2px;
   background-color: rgba(255,255,255, 0.15);
-  width: 90%;
+  width: 95%;
   margin: 15px 0;
 `;
 
@@ -109,9 +109,40 @@ export const Button = styled.TouchableOpacity`
 
 export const ButtonText = styled(RegularText)``;
 
-export const Monday = styled.View``;
+export const Monday = styled.View`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-export const Tuesday = styled.View``;
+export const Tuesday = styled.View`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Wednesday = styled.View`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Thursday = styled.View`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Friday = styled.View`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Test = styled.View`
   height: 250px;
