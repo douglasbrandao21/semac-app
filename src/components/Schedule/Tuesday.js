@@ -149,6 +149,8 @@ export default function Tuesday() {
           </Category>
         </RightSide>
       </ScheduleRow>
+
+      <Separator />
     </Fragment>
   );
 }

@@ -94,6 +94,8 @@ export default function Friday() {
           </Category>
         </RightSide>
       </ScheduleRow>
+
+      <Separator />
     </Fragment>
   );
 }

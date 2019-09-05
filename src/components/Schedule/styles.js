@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { BoldText, RegularText } from '~/styles/global';
+import { BoldText, RegularText } from "~/styles/global";
 
 export const Container = styled.ScrollView`
   flex: 1;
@@ -26,7 +26,7 @@ export const DateTitle = styled(BoldText)`
 
 export const Separator = styled.View`
   height: 2px;
-  background-color: rgba(255,255,255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
   width: 95%;
   margin: 15px 0;
 `;
@@ -61,12 +61,13 @@ export const RightSide = styled.View`
 
 export const LectureName = styled(BoldText)`
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
 `;
 
 export const LectureInfo = styled(RegularText)`
   font-size: 16px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
+  margin: 5px 0;
 `;
 
 export const Category = styled.View`
@@ -86,7 +87,7 @@ export const Circle = styled.View`
 export const CategoryText = styled(RegularText)`
   margin-left: 5px;
   font-size: 12px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
 `;
 
 export const ButtonsContainer = styled.View`

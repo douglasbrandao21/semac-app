@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { BoldText, RegularText } from "~/styles/global";
+import FlexBox from "~/components/FlexBox";
 
 export const Container = styled.ScrollView`
   flex: 1;
@@ -11,7 +12,23 @@ export const Container = styled.ScrollView`
 
 export const Title = styled(BoldText)`
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+`;
+
+export const HeaderContainer = styled.View`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const HeaderSeparator = styled.View`
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  margin-bottom: 15px;
 `;
 
 export const Separator = styled.View`

@@ -1,10 +1,14 @@
-import React, { Fragment, useState } from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import React, { Fragment, useState, useEffect } from "react";
+import { StyleSheet } from "react-native";
+
+import * as Animatable from "react-native-animatable";
 
 import Navbar from "~/components/Navbar";
 
 import {
   Container,
+  HeaderContainer,
+  HeaderSeparator,
   Title,
   ButtonsContainer,
   Button,
@@ -22,10 +26,15 @@ import Friday from "~/components/Schedule/Friday";
 
 export default function Schedules() {
   const [monday, setMonday] = useState(true);
-  const [tuesday, setTuesday] = useState(true);
-  const [wednesday, setWednesday] = useState(true);
-  const [thursday, setThursday] = useState(true);
-  const [friday, setFriday] = useState(true);
+  const [tuesday, setTuesday] = useState(false);
+  const [wednesday, setWednesday] = useState(false);
+  const [thursday, setThursday] = useState(false);
+  const [friday, setFriday] = useState(false);
+
+  useEffect(() => {
+    disableAll();
+    setMonday(true);
+  }, {});
 
   const styles = StyleSheet.create({
     gradient: {
@@ -35,12 +44,15 @@ export default function Schedules() {
       justifyContent: "center",
       alignItems: "center",
       borderRadius: 20
+    },
+    animatedView: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
+      flex: 1
     }
   });
-
-  function isAllTrue() {
-    return monday && tuesday && wednesday && thursday && friday;
-  }
 
   function disableAll() {
     setMonday(false);
@@ -81,32 +93,10 @@ export default function Schedules() {
 
       <Title>Programação do dia</Title>
 
-      {isAllTrue() ? (
-        <ButtonsContainer>
-          <Button onPress={handleMonday}>
-            <ButtonText>seg</ButtonText>
-          </Button>
-
-          <Button>
-            <ButtonText onPress={handleTuesday}>ter</ButtonText>
-          </Button>
-
-          <Button onPress={handleWednesday}>
-            <ButtonText>qua</ButtonText>
-          </Button>
-
-          <Button onPress={handleThursday}>
-            <ButtonText>qui</ButtonText>
-          </Button>
-
-          <Button onPress={handleFriday}>
-            <ButtonText>sex</ButtonText>
-          </Button>
-        </ButtonsContainer>
-      ) : (
+      <HeaderContainer>
         <ButtonsContainer>
           {monday ? (
-            <Button onPress={handleMonday}>
+            <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -123,7 +113,7 @@ export default function Schedules() {
           )}
 
           {tuesday ? (
-            <Button onPress={handleTuesday}>
+            <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -140,7 +130,7 @@ export default function Schedules() {
           )}
 
           {wednesday ? (
-            <Button onPress={handleWednesday}>
+            <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -157,7 +147,7 @@ export default function Schedules() {
           )}
 
           {thursday ? (
-            <Button onPress={handleThursday}>
+            <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -174,7 +164,7 @@ export default function Schedules() {
           )}
 
           {friday ? (
-            <Button onPress={handleThursday}>
+            <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
@@ -190,17 +180,68 @@ export default function Schedules() {
             </Button>
           )}
         </ButtonsContainer>
+        <HeaderSeparator />
+      </HeaderContainer>
+
+      {monday ? (
+        <Animatable.View
+          animation="fadeInUp"
+          duration={500}
+          style={styles.animatedView}
+        >
+          <Monday />
+        </Animatable.View>
+      ) : (
+        <Fragment />
       )}
 
-      {monday ? <Monday /> : <Fragment />}
+      {tuesday ? (
+        <Animatable.View
+          animation="fadeInUp"
+          duration={500}
+          style={styles.animatedView}
+        >
+          <Tuesday />
+        </Animatable.View>
+      ) : (
+        <Fragment />
+      )}
 
-      {tuesday ? <Tuesday /> : <Fragment />}
+      {wednesday ? (
+        <Animatable.View
+          animation="fadeInUp"
+          duration={500}
+          style={styles.animatedView}
+        >
+          <Wednesday />
+        </Animatable.View>
+      ) : (
+        <Fragment />
+      )}
 
-      {wednesday ? <Wednesday /> : <Fragment />}
+      {thursday ? (
+        <Animatable.View
+          animation="fadeInUp"
+          duration={500}
+          style={styles.animatedView}
+        >
+          <Thursday />
+        </Animatable.View>
+      ) : (
+        <Fragment />
+      )}
 
-      {thursday ? <Thursday /> : <Fragment />}
-
-      {friday ? <Friday /> : <Fragment />}
+      {friday ? (
+        <Animatable.View
+          animation="fadeInUp"
+          duration={500}
+          style={styles.animatedView}
+        >
+          <Friday />
+        </Animatable.View>
+      ) : (
+        <Fragment />
+      )}
     </Container>
   );
 }
