@@ -28,14 +28,15 @@ export const Title = styled(BoldText)`
   margin-top: 50px;
 `;
 
-export const Subtitle = styled.Text`
+export const Subtitle = styled(RegularText)`
   color: #FFF;
   text-align: center;
   font-size: 14px;
+  margin-bottom: 10px;
 `;
 
 export const Flow = styled.Image`
-  height: 78px;
+  height: 79px;
   width: 100%;
 `;
 

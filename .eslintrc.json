@@ -4,7 +4,14 @@
     "es6": true,
     "jest": true
   },
-  "extends": ["airbnb", "plugin:react-native/all"],
+  "extends": [
+    "airbnb",
+    "plugin:react-native/all",
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly",
@@ -17,7 +24,22 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-native", "jsx-a11y", "import"],
+  "plugins": [
+    "react",
+    "react-native",
+    "jsx-a11y",
+    "import",
+    "prettier",
+    "standard"
+  ],
+  "prettier/prettier": [
+    "error",
+    {
+      "trailingComma": "es5",
+      "singleQuote": true,
+      "printWidth": 100
+    }
+  ],
   "rules": {
     "react/jsx-filename-extension": [
       "error",
