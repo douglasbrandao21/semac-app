@@ -40,10 +40,6 @@ export default function Thursday() {
           <LectureInfo>
             Em breve mais conteúdo • Prof. Luiz Afonso Peccini
           </LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
 
           <Separator />
 
@@ -54,10 +50,6 @@ export default function Thursday() {
           <LectureInfo>
             Em breve mais conteúdo • Prof. Dr. Henrique Dezani
           </LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -70,11 +62,7 @@ export default function Thursday() {
 
         <RightSide>
           <LectureName>Coffee Break</LectureName>
-          <LectureInfo>Coffee Break</LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
+          <LectureInfo>Adunesp</LectureInfo>
         </RightSide>
       </ScheduleRow>
 
@@ -92,10 +80,6 @@ export default function Thursday() {
           <LectureInfo>
             Auditório A • Prof. Dr. Aparecido Nilceu Marana
           </LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -109,10 +93,6 @@ export default function Thursday() {
         <RightSide>
           <LectureName>Coffee Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -130,10 +110,6 @@ export default function Thursday() {
           <LectureInfo>
             Auditório A • Prof. Dr. Anderson de Rezende Rocha
           </LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -147,10 +123,6 @@ export default function Thursday() {
         <RightSide>
           <LectureName>Noite de Jogos</LectureName>
           <LectureInfo>Em breve mais conteúdo</LectureInfo>
-          <Category>
-            <Circle color="#FEE140" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 

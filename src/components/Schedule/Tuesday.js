@@ -37,10 +37,6 @@ export default function Tuesday() {
             Como tornar a IoT mais inteligente - abordagens e aplicações
           </LectureName>
           <LectureInfo>Auditório A • Prof. Dr. Jó Ueyama</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -60,10 +56,6 @@ export default function Tuesday() {
             Prof. Me. Allan de Godoi Contessoto • Bruno Leal • Me. Guilherme
             Freire • José Carlos de Freitas
           </LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -77,10 +69,6 @@ export default function Tuesday() {
         <RightSide>
           <LectureName>Coffe Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -94,10 +82,6 @@ export default function Tuesday() {
         <RightSide>
           <LectureName>Mundo Hacker</LectureName>
           <LectureInfo>Auditório A • Felipe Guimarães Prado Souza</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -115,10 +99,6 @@ export default function Tuesday() {
           <LectureInfo>
             Em breve mais conteúdo • Prof. Dr. Tiago Fernandes Tavares
           </LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
 
           <Separator />
 
@@ -126,10 +106,6 @@ export default function Tuesday() {
             Minicurso: Desenvolvimento de APIs utilizando SpringBoot
           </LectureName>
           <LectureInfo>Em breve mais conteúdo</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -143,10 +119,6 @@ export default function Tuesday() {
         <RightSide>
           <LectureName>Coffee Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 

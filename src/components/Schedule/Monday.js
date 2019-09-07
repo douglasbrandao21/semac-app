@@ -35,10 +35,6 @@ export default function Monday() {
         <RightSide>
           <LectureName>Credenciamento</LectureName>
           <LectureInfo>Saguão</LectureInfo>
-          <Category>
-            <Circle color="#2AF598" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -48,14 +44,9 @@ export default function Monday() {
         <LeftSide>
           <Hour color="#2AF598">08:40</Hour>
         </LeftSide>
-
         <RightSide>
           <LectureName>Abertura</LectureName>
           <LectureInfo>Auditório A</LectureInfo>
-          <Category>
-            <Circle color="#2AF598" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -69,10 +60,6 @@ export default function Monday() {
         <RightSide>
           <LectureName>Coffe Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
-          <Category>
-            <Circle color="#2AF598" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -89,10 +76,6 @@ export default function Monday() {
             Empreendedorismo
           </LectureName>
           <LectureInfo>Auditório A • Prof. Carlos Gondo</LectureInfo>
-          <Category>
-            <Circle color="#2AF598" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -111,10 +94,6 @@ export default function Monday() {
           <LectureInfo>
             Auditório A • Profa. Dra. Luciene Cavalcanti
           </LectureInfo>
-          <Category>
-            <Circle color="#2AF598" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 

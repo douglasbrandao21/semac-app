@@ -25,16 +25,7 @@ import Thursday from "~/components/Schedule/Thursday";
 import Friday from "~/components/Schedule/Friday";
 
 export default function Schedules() {
-  const [monday, setMonday] = useState(true);
-  const [tuesday, setTuesday] = useState(false);
-  const [wednesday, setWednesday] = useState(false);
-  const [thursday, setThursday] = useState(false);
-  const [friday, setFriday] = useState(false);
-
-  useEffect(() => {
-    disableAll();
-    setMonday(true);
-  }, {});
+  const [active, setActive] = useState("monday");
 
   const styles = StyleSheet.create({
     gradient: {
@@ -54,37 +45,24 @@ export default function Schedules() {
     }
   });
 
-  function disableAll() {
-    setMonday(false);
-    setTuesday(false);
-    setWednesday(false);
-    setThursday(false);
-    setFriday(false);
-  }
-
   function handleMonday() {
-    disableAll();
-    setMonday(true);
+    setActive("monday");
   }
 
   function handleTuesday() {
-    disableAll();
-    setTuesday(true);
+    setActive("tuesday");
   }
 
   function handleWednesday() {
-    disableAll();
-    setWednesday(true);
+    setActive("wednesday");
   }
 
   function handleThursday() {
-    disableAll();
-    setThursday(true);
+    setActive("thursday");
   }
 
   function handleFriday() {
-    disableAll();
-    setFriday(true);
+    setActive("friday");
   }
 
   return (
@@ -95,7 +73,7 @@ export default function Schedules() {
 
       <HeaderContainer>
         <ButtonsContainer>
-          {monday ? (
+          {active == "monday" ? (
             <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
@@ -112,7 +90,7 @@ export default function Schedules() {
             </Button>
           )}
 
-          {tuesday ? (
+          {active == "tuesday" ? (
             <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
@@ -129,7 +107,7 @@ export default function Schedules() {
             </Button>
           )}
 
-          {wednesday ? (
+          {active == "wednesday" ? (
             <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
@@ -146,7 +124,7 @@ export default function Schedules() {
             </Button>
           )}
 
-          {thursday ? (
+          {active == "thursday" ? (
             <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
@@ -163,7 +141,7 @@ export default function Schedules() {
             </Button>
           )}
 
-          {friday ? (
+          {active == "friday" ? (
             <Button>
               <LinearGradient
                 start={{ x: 0, y: 0 }}
@@ -183,7 +161,7 @@ export default function Schedules() {
         <HeaderSeparator />
       </HeaderContainer>
 
-      {monday ? (
+      {active == "monday" ? (
         <Animatable.View
           animation="fadeInUp"
           duration={500}
@@ -195,7 +173,7 @@ export default function Schedules() {
         <Fragment />
       )}
 
-      {tuesday ? (
+      {active == "tuesday" ? (
         <Animatable.View
           animation="fadeInUp"
           duration={500}
@@ -207,7 +185,7 @@ export default function Schedules() {
         <Fragment />
       )}
 
-      {wednesday ? (
+      {active == "wednesday" ? (
         <Animatable.View
           animation="fadeInUp"
           duration={500}
@@ -219,7 +197,7 @@ export default function Schedules() {
         <Fragment />
       )}
 
-      {thursday ? (
+      {active == "thursday" ? (
         <Animatable.View
           animation="fadeInUp"
           duration={500}
@@ -231,7 +209,7 @@ export default function Schedules() {
         <Fragment />
       )}
 
-      {friday ? (
+      {active == "friday" ? (
         <Animatable.View
           animation="fadeInUp"
           duration={500}

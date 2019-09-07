@@ -3,50 +3,56 @@ import { Text, StyleSheet } from "react-native";
 
 import { createAppContainer, createBottomTabNavigator } from "react-navigation";
 
-import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
-
 import Icon from "react-native-vector-icons/FontAwesome5";
 
 import BoldText from "~/components/BoldText";
 
 import Home from "~/pages/Home";
 import Infos from "~/pages/Infos";
-import Programacao from "~/pages/Schedules";
+import Programação from "~/pages/Schedules";
 
 const Routes = createAppContainer(
-  createMaterialBottomTabNavigator(
+  createBottomTabNavigator(
     {
-      Info: {
+      Infos: {
         screen: Infos,
-        navigationOptions: {
+        navigationOptions: () => ({
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="info-circle" color={tintColor} size={18} />
+            <Icon name="info-circle" color={tintColor} size={20} />
           )
-        }
+        })
       },
       Home: {
         screen: Home,
-        navigationOptions: {
+        navigationOptions: () => ({
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="home" color={tintColor} size={18} />
+            <Icon name="home" color={tintColor} size={20} />
           )
-        }
+        })
       },
-      Programacao: {
-        screen: Programacao,
-        navigationOptions: {
+      Programação: {
+        screen: Programação,
+        tabBarLabel: ({ focused }) =>
+          focused ? <BoldText>Teste</BoldText> : <Text>Teste2</Text>,
+        navigationOptions: () => ({
           tabBarIcon: ({ tintColor }) => (
-            <Icon name="calendar-day" color={tintColor} size={18} />
+            <Icon name="calendar-day" color={tintColor} size={20} />
           )
-        }
+        })
       }
     },
     {
       initialRouteName: "Home",
-      activeTintColor: "#FFF",
-      inactiveTintColor: "rgba(255,255,255,0.2)",
-      shifting: true,
-      barStyle: { backgroundColor: "#0C0A17", fontFamily: "Montserrat-Regular" }
+      tabBarOptions: {
+        showIcon: true,
+        showLabel: true,
+        activeTintColor: "#FCFCFC",
+        inactiveTintColor: "rgba(255, 255, 255, 0.2)",
+        style: {
+          backgroundColor: "#0C0A17",
+          fontFamily: "Montserrat-Regular"
+        }
+      }
     }
   )
 );

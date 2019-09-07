@@ -35,10 +35,6 @@ export default function Friday() {
         <RightSide>
           <LectureName>Palestra com título a ser confirmado</LectureName>
           <LectureInfo>Auditório A</LectureInfo>
-          <Category>
-            <Circle color="#AC18E1" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -54,10 +50,6 @@ export default function Friday() {
             Desenvolvimento de Robôs Autônomos para Jogar Futebol
           </LectureName>
           <LectureInfo>Auditório A • Prof. Dr. Marcos Máximo</LectureInfo>
-          <Category>
-            <Circle color="#AC18E1" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -71,10 +63,6 @@ export default function Friday() {
         <RightSide>
           <LectureName>Coffe Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
-          <Category>
-            <Circle color="#AC18E1" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -88,10 +76,6 @@ export default function Friday() {
         <RightSide>
           <LectureName>Encerramento</LectureName>
           <LectureInfo>Auditório A</LectureInfo>
-          <Category>
-            <Circle color="#AC18E1" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 

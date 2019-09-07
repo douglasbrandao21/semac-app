@@ -37,10 +37,6 @@ export default function Wednesday() {
             Evolução do Processamento de Linguagem Natural com Machine Learning
           </LectureName>
           <LectureInfo>Auditório A • Prof. Dr. Henrique Dezani</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -54,10 +50,6 @@ export default function Wednesday() {
         <RightSide>
           <LectureName>Coffee Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -75,10 +67,6 @@ export default function Wednesday() {
           <LectureInfo>
             Auditório A • Prof. Dr. Eduardo do Valle Simões
           </LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 
@@ -92,10 +80,6 @@ export default function Wednesday() {
         <RightSide>
           <LectureName>Maratona de Programação</LectureName>
           <LectureInfo>Em breve mais conteúdo</LectureInfo>
-          <Category>
-            <Circle color="#08AEEA" />
-            <CategoryText>Categoria do evento</CategoryText>
-          </Category>
         </RightSide>
       </ScheduleRow>
 

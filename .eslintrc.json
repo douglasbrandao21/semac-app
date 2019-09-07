@@ -32,14 +32,6 @@
     "prettier",
     "standard"
   ],
-  "prettier/prettier": [
-    "error",
-    {
-      "trailingComma": "es5",
-      "singleQuote": true,
-      "printWidth": 100
-    }
-  ],
   "rules": {
     "react/jsx-filename-extension": [
       "error",
