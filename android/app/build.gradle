@@ -2,6 +2,17 @@ apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
 
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' } // Gradle Plugin Portal
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.1, 0.99.99]'
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
  * and bundleReleaseJsAndAssets).
@@ -77,6 +88,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -117,9 +129,21 @@ android {
         }
     }
     buildTypes {
+
+        debug {
+          buildConfigField "String", "CODEPUSH_KEY", '""'
+        }
+
+        releaseStaging {
+          buildConfigField "String", "CODEPUSH_KEY", '"uKY0SnUEoHPNfI2DBgqC3R7LuJ6Ro7coVrqKS"'
+          matchingFallbacks = ['debug', 'release']
+        }
+
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+
+            buildConfigField "String", "CODEPUSH_KEY", '"k83rOWtjBdjVL5PSZ_wYyvzSiTcjWmv5XdW3O"'
         }
     }
     // applicationVariants are e.g. debug, release
@@ -138,6 +162,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-onesignal')
+    implementation project(':react-native-code-push')
     implementation project(':react-native-reanimated')
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-svg')
