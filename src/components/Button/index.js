@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 import Gradient from "react-native-linear-gradient";
 
-import { ButtonContainer, ButtonStyle, ButtonText } from "./styles";
+import { ButtonStyle, ButtonText } from "./styles";
 
 export default function Button(props) {
   const styles = StyleSheet.create({

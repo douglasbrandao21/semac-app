@@ -3,11 +3,6 @@ import { StatusBar } from "react-native";
 import CodePush from "react-native-code-push";
 import OneSignal from "react-native-onesignal";
 
-import "./config/ReactotronConfig";
-
-import { Provider } from "react-redux";
-import store from "./store";
-
 import Routes from "~/routes";
 
 class App extends Component {

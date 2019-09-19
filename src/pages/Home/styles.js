@@ -1,25 +1,10 @@
 import styled from "styled-components/native";
-import { StyleSheet } from "react-native";
 import { BoldText, RegularText } from "~/styles/global";
-
-import CustomGradient from "~/components/GradientBar/CustomGradient";
 
 export const Container = styled.ScrollView`
   flex: 1;
   display: flex;
   background-color: #151128;
-`;
-
-export const LogoContainer = styled.View`
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 50px;
-`;
-
-export const Logo = styled.Image`
-  height: 50px;
-  width: 170px;
 `;
 
 export const Title = styled(BoldText)`
@@ -37,77 +22,6 @@ export const Subtitle = styled(RegularText)`
 export const Flow = styled.Image`
   height: 79px;
   width: 100%;
-`;
-
-export const TimerContainer = styled.View`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  height: 154px;
-  width: 375px;
-  background-color: #1c1735;
-  margin-top: 25px;
-  margin-bottom: 25px;
-`;
-
-export const BoxesContainer = styled.View`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const NumberBox = styled.View`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 64px;
-  width: 64px;
-  margin: 0 10px;
-  border-radius: 8px;
-  border: 2px solid;
-`;
-
-export const Days = styled(NumberBox)`
-  border-color: #e20473;
-`;
-
-export const Hours = styled(NumberBox)`
-  border-color: #ac18e1;
-`;
-
-export const Minutes = styled(NumberBox)`
-  border-color: #08aeea;
-`;
-
-export const Seconds = styled(NumberBox)`
-  border-color: #2af598;
-`;
-
-export const TimerNumber = styled(BoldText)`
-  font-size: 22px;
-`;
-
-export const BoxText = styled(RegularText)`
-  font-size: 10px;
-`;
-
-export const TextContainer = styled.View`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 15px;
-`;
-
-export const TimerText = styled(RegularText)`
-  font-size: 14px;
-`;
-
-export const TimerTextBold = styled(BoldText)`
-  font-size: 14px;
-  font-weight: bold;
 `;
 
 export const CarouselContainer = styled.View`
@@ -147,10 +61,15 @@ export const ContentContainer = styled.View`
   align-items: center;
 `;
 
-export const ContentRow = styled.View`
+export const ContentCard = styled.View`
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #1c1735;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
 `;
 
 export const IconContainer = styled.View`
@@ -164,32 +83,6 @@ export const IconContainer = styled.View`
 export const CustomIcon = styled.Image.attrs({})`
   height: ${props => props.height};
   width: ${props => props.width};
-`;
-
-export const ContentGradient = styled(CustomGradient).attrs({
-  height: 3,
-  width: 100,
-  marginTop: 5,
-  marginBottom: 5
-})``;
-
-export const ContentCard = styled.View`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  background-color: #1c1735;
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 8px;
-`;
-
-export const RowContent = styled.View`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const ContentTitle = styled(BoldText)`
@@ -207,14 +100,6 @@ export const SponsorsContainer = styled.View`
   padding: 25px;
 `;
 
-export const DiamantRow = styled.View`
-  width: 100%;
-  height: 128px;
-  border: 2px solid #81e3db;
-  border-radius: 8px;
-  margin-bottom: 15px;
-`;
-
 export const GoldRow = styled.View`
   display: flex;
   flex-direction: column;
@@ -229,7 +114,7 @@ export const GoldLabel = styled(RegularText)`
   width: 75px;
 `;
 
-export const GoldSquare = styled.View`
+export const GoldSquare = styled.TouchableOpacity`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,14 +129,14 @@ export const SponsorLogo = styled.Image`
   width: 80%;
 `;
 
-export const OpusLogo = styled.Image`
-  height: 50px;
-  width: 80px;
-`;
-
 export const SilverRow = styled.View`
   width: 100%;
   margin-bottom: 20px;
+`;
+
+export const SponsorLabel = styled(RegularText)`
+  font-size: 12px;
+  color: #fff;
 `;
 
 export const SquarsContainer = styled.View`
@@ -260,12 +145,7 @@ export const SquarsContainer = styled.View`
   justify-content: center;
 `;
 
-export const SponsorLabel = styled(RegularText)`
-  font-size: 12px;
-  color: #fff;
-`;
-
-export const SilverSquare = styled.View`
+export const SilverSquare = styled.TouchableOpacity`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,41 +156,40 @@ export const SilverSquare = styled.View`
   border-radius: 8px;
 `;
 
-export const BronzeRow = styled.View`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+export const SupportContainer = styled.View`
+  height: 150px;
   width: 100%;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const SmallSquare = styled.View`
+export const SupportLabel = styled.Text`
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+  font-size: 12px;
+  margin-bottom: 2px;
+`;
+
+export const SupportRow = styled.View`
+  height: 100%;
+  display: flex;
+`;
+
+export const SupportSquare = styled.TouchableOpacity`
+  height: 75px;
+  width: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 10px;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #ff6700;
-  border-radius: 8px;
 `;
 
-export const TicketContainer = styled.View`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const TicketText = styled(BoldText)`
-  font-size: 18px;
-  color: #fff;
-`;
-
-export const TicketButton = styled.TouchableOpacity`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  border: 2px solid #2af598;
-  border-radius: 50px;
+export const SupportLogo = styled.Image`
+  height: ${props => props.height};
+  width: ${props => props.width};
 `;
 
 export const SubtitleDonations = styled(RegularText)`

@@ -1,11 +1,8 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
 
 import { createAppContainer, createBottomTabNavigator } from "react-navigation";
 
 import Icon from "react-native-vector-icons/FontAwesome5";
-
-import BoldText from "~/components/BoldText";
 
 import Home from "~/pages/Home";
 import Infos from "~/pages/Infos";
@@ -32,8 +29,6 @@ const Routes = createAppContainer(
       },
       Programação: {
         screen: Programação,
-        tabBarLabel: ({ focused }) =>
-          focused ? <BoldText>Teste</BoldText> : <Text>Teste2</Text>,
         navigationOptions: () => ({
           tabBarIcon: ({ tintColor }) => (
             <Icon name="calendar-day" color={tintColor} size={20} />

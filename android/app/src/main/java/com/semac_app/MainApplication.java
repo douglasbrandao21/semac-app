@@ -7,7 +7,6 @@ import com.geektime.rnonesignalandroid.ReactNativeOneSignalPackage;
 import com.microsoft.codepush.react.CodePush;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
-import com.horcrux.svg.SvgPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -40,7 +39,6 @@ public class MainApplication extends Application implements ReactApplication {
             new CodePush(BuildConfig.CODEPUSH_KEY, getApplicationContext(), BuildConfig.DEBUG),
             new ReanimatedPackage(),
             new VectorIconsPackage(),
-            new SvgPackage(),
             new LinearGradientPackage(),
             new RNGestureHandlerPackage()
       );

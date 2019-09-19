@@ -15,22 +15,25 @@ import {
   CarouselTitle,
   CarouselSub,
   ContentContainer,
-  ContentTitle,
   ContentCard,
+  IconContainer,
+  CustomIcon,
+  ContentTitle,
   ContentParagraph,
   SponsorsContainer,
   GoldRow,
   GoldLabel,
   GoldSquare,
-  RowContent,
+  SponsorLogo,
   SilverRow,
   SponsorLabel,
-  IconContainer,
-  ContentGradient,
   SquarsContainer,
   SilverSquare,
-  SponsorLogo,
-  CustomIcon,
+  SupportContainer,
+  SupportLabel,
+  SupportRow,
+  SupportSquare,
+  SupportLogo,
   SubtitleDonations,
   Donationtext,
   BankInfoContainer,
@@ -52,6 +55,11 @@ import logoOpus from "~/assets/images/logo_opus.png";
 import logoHit from "~/assets/images/logo_hit_branco.png";
 import logoPca from "~/assets/images/logo_pca.png";
 import logoWdg from "~/assets/images/logo_wdg.png";
+
+import logoPoty from "~/assets/images/support/poty.png";
+import logoHotBeach from "~/assets/images/support/hot_beach.png";
+import blucherLogo from "~/assets/images/support/blucher.png";
+import casaDoCodigoLogo from "~/assets/images/support/casa_do_codigo.png";
 
 import CollegeIcon from "~/assets/icons/minicurso-icon-gradient.png";
 import MicrophoneIcon from "~/assets/icons/palestra-gradient.png";
@@ -348,8 +356,8 @@ export default function Home() {
 
       <SponsorsContainer>
         <GoldRow>
-          <GoldLabel>Gold</GoldLabel>
-          <GoldSquare>
+          <GoldLabel>Ouro</GoldLabel>
+          <GoldSquare onPress={() => Linking.openURL("https://nic.br/")}>
             <SponsorLogo source={logoNic} />
           </GoldSquare>
         </GoldRow>
@@ -358,24 +366,81 @@ export default function Home() {
           <SponsorLabel>Prata</SponsorLabel>
 
           <SquarsContainer>
-            <SilverSquare>
+            <SilverSquare
+              onPress={() =>
+                Linking.openURL("https://www.opus-software.com.br/")
+              }
+            >
               <SponsorLogo source={logoOpus} />
             </SilverSquare>
 
-            <SilverSquare>
+            <SilverSquare
+              onPress={() => Linking.openURL("https://hit.com.vc/")}
+            >
               <SponsorLogo source={logoHit} />
             </SilverSquare>
 
-            <SilverSquare>
+            <SilverSquare
+              onPress={() => Linking.openURL("https://www.pca.com.br/site/")}
+            >
               <SponsorLogo source={logoPca} />
             </SilverSquare>
 
-            <SilverSquare>
+            <SilverSquare
+              onPress={() => Linking.openURL("https://www.wdgautomation.com/")}
+            >
               <SponsorLogo source={logoWdg} />
             </SilverSquare>
           </SquarsContainer>
         </SilverRow>
       </SponsorsContainer>
+
+      <SupportContainer>
+        <SupportRow>
+          <SupportLabel>Suporte</SupportLabel>
+          <SquarsContainer>
+            <SupportSquare
+              onPress={() => Linking.openURL("http://www.bebidaspoty.com.br/")}
+            >
+              <SupportLogo
+                source={logoPoty}
+                height={40}
+                width={59}
+              ></SupportLogo>
+            </SupportSquare>
+
+            <SupportSquare
+              onPress={() => Linking.openURL("https://www.blucher.com.br/")}
+            >
+              <SupportLogo
+                source={blucherLogo}
+                height={22}
+                width={54}
+              ></SupportLogo>
+            </SupportSquare>
+
+            <SupportSquare
+              onPress={() => Linking.openURL("http://www.hotbeach.com.br/")}
+            >
+              <SupportLogo
+                source={logoHotBeach}
+                height={45}
+                width={55}
+              ></SupportLogo>
+            </SupportSquare>
+
+            <SupportSquare
+              onPress={() => Linking.openURL("https://www.casadocodigo.com.br")}
+            >
+              <SupportLogo
+                source={casaDoCodigoLogo}
+                height={20}
+                width={65}
+              ></SupportLogo>
+            </SupportSquare>
+          </SquarsContainer>
+        </SupportRow>
+      </SupportContainer>
 
       <Title>Doações</Title>
       <PurpleToBlueGradient />
