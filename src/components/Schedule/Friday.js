@@ -29,12 +29,45 @@ export default function Friday() {
 
       <ScheduleRow>
         <LeftSide>
+          <Hour color="#AC18E1">08:30</Hour>
+        </LeftSide>
+
+        <RightSide>
+          <LectureName>
+            Transformação Digital: RPA integrado com Inteligência Artificial,
+            Chatbot e URA
+          </LectureName>
+          <LectureInfo>Auditório A • Egmon Rethondin Sedano</LectureInfo>
+        </RightSide>
+      </ScheduleRow>
+
+      <Separator />
+
+      <ScheduleRow>
+        <LeftSide>
+          <Hour color="#AC18E1">09:40</Hour>
+        </LeftSide>
+
+        <RightSide>
+          <LectureName>Coffee Break</LectureName>
+          <LectureInfo>Adunesp</LectureInfo>
+        </RightSide>
+      </ScheduleRow>
+
+      <Separator />
+
+      <ScheduleRow>
+        <LeftSide>
           <Hour color="#AC18E1">10:00</Hour>
         </LeftSide>
 
         <RightSide>
-          <LectureName>Palestra com título a ser confirmado</LectureName>
-          <LectureInfo>Auditório A</LectureInfo>
+          <LectureName>
+            Utilização da ferramenta Simulink Hardware Support em robótica
+          </LectureName>
+          <LectureInfo>
+            Auditório A • Prof. Dr. Luiz Antonio Bássora
+          </LectureInfo>
         </RightSide>
       </ScheduleRow>
 

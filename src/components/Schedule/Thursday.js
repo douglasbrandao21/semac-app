@@ -38,7 +38,7 @@ export default function Thursday() {
             utilizando os diagramas CPM, Rede, AoA e AoN"
           </LectureName>
           <LectureInfo>
-            Em breve mais conteúdo • Prof. Luiz Afonso Peccini
+            Laboratório de Robótica • Prof. Luiz Afonso Peccini
           </LectureInfo>
 
           <Separator />
@@ -47,9 +47,7 @@ export default function Thursday() {
             Minicurso: Introdução ao Processamento de Linguagem Natural com
             Python
           </LectureName>
-          <LectureInfo>
-            Em breve mais conteúdo • Prof. Dr. Henrique Dezani
-          </LectureInfo>
+          <LectureInfo>LIM I • Prof. Dr. Henrique Dezani</LectureInfo>
         </RightSide>
       </ScheduleRow>
 
@@ -63,6 +61,32 @@ export default function Thursday() {
         <RightSide>
           <LectureName>Coffee Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
+        </RightSide>
+      </ScheduleRow>
+
+      <Separator />
+
+      <ScheduleRow>
+        <LeftSide>
+          <Hour color="#FEE140">10:00</Hour>
+        </LeftSide>
+
+        <RightSide>
+          <LectureName>
+            Minicurso: "Cronograma de Projetos: Cálculo do tempo de um projeto
+            utilizando os diagramas CPM, Rede, AoA e AoN"
+          </LectureName>
+          <LectureInfo>
+            Laboratório de Robótica • Prof. Luiz Afonso Peccini
+          </LectureInfo>
+
+          <Separator />
+
+          <LectureName>
+            Minicurso: Introdução ao Processamento de Linguagem Natural com
+            Python
+          </LectureName>
+          <LectureInfo>LIM I • Prof. Dr. Henrique Dezani</LectureInfo>
         </RightSide>
       </ScheduleRow>
 
@@ -105,7 +129,8 @@ export default function Thursday() {
 
         <RightSide>
           <LectureName>
-            Entendendo Eventos do Mundo Real no Espaço e Tempo
+            A verdade por detrás da história: Revelando fake news em massa e
+            redes sociais
           </LectureName>
           <LectureInfo>
             Auditório A • Prof. Dr. Anderson de Rezende Rocha
@@ -122,7 +147,9 @@ export default function Thursday() {
 
         <RightSide>
           <LectureName>Noite de Jogos</LectureName>
-          <LectureInfo>Em breve mais conteúdo</LectureInfo>
+          <LectureInfo>
+            Auditório C - Consoles • Lab 5 - League of Legends
+          </LectureInfo>
         </RightSide>
       </ScheduleRow>
 

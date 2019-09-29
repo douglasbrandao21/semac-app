@@ -139,6 +139,30 @@ export const SponsorLabel = styled(RegularText)`
   color: #fff;
 `;
 
+export const CopperRow = styled.View`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+`;
+
+export const CopperLabel = styled.Text`
+  color: #ff6700;
+  width: 75px;
+`;
+
+export const CopperSquare = styled.TouchableOpacity`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #ff6700;
+  border-radius: 8px;
+`;
+
 export const SquarsContainer = styled.View`
   display: flex;
   flex-direction: row;
@@ -157,7 +181,8 @@ export const SilverSquare = styled.TouchableOpacity`
 `;
 
 export const SupportContainer = styled.View`
-  height: 150px;
+  margin-top: 30px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -172,8 +197,8 @@ export const SupportLabel = styled.Text`
 `;
 
 export const SupportRow = styled.View`
-  height: 100%;
   display: flex;
+  margin-bottom: 20px;
 `;
 
 export const SupportSquare = styled.TouchableOpacity`

@@ -79,7 +79,33 @@ export default function Wednesday() {
 
         <RightSide>
           <LectureName>Maratona de Programação</LectureName>
-          <LectureInfo>Em breve mais conteúdo</LectureInfo>
+          <LectureInfo>Lab. 5</LectureInfo>
+        </RightSide>
+      </ScheduleRow>
+
+      <Separator />
+
+      <ScheduleRow>
+        <LeftSide>
+          <Hour color="#08AEEA">15:40</Hour>
+        </LeftSide>
+
+        <RightSide>
+          <LectureName>Coffee Break</LectureName>
+          <LectureInfo>Adunesp</LectureInfo>
+        </RightSide>
+      </ScheduleRow>
+
+      <Separator />
+
+      <ScheduleRow>
+        <LeftSide>
+          <Hour color="#08AEEA">16:00</Hour>
+        </LeftSide>
+
+        <RightSide>
+          <LectureName>Maratona de Programação</LectureName>
+          <LectureInfo>Lab. 5</LectureInfo>
         </RightSide>
       </ScheduleRow>
 

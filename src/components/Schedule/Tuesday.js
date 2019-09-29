@@ -96,16 +96,14 @@ export default function Tuesday() {
           <LectureName>
             Minicurso: Análise de sinais de áudio musical
           </LectureName>
-          <LectureInfo>
-            Em breve mais conteúdo • Prof. Dr. Tiago Fernandes Tavares
-          </LectureInfo>
+          <LectureInfo>Lab. 5 • Prof. Dr. Tiago Fernandes Tavares</LectureInfo>
 
           <Separator />
 
           <LectureName>
             Minicurso: Desenvolvimento de APIs utilizando SpringBoot
           </LectureName>
-          <LectureInfo>Em breve mais conteúdo</LectureInfo>
+          <LectureInfo>LIM I • Luiz Roberto Freitas</LectureInfo>
         </RightSide>
       </ScheduleRow>
 
@@ -113,12 +111,34 @@ export default function Tuesday() {
 
       <ScheduleRow>
         <LeftSide>
-          <Hour color="#FF6700">21:40</Hour>
+          <Hour color="#FF6700">20:40</Hour>
         </LeftSide>
 
         <RightSide>
           <LectureName>Coffee Break</LectureName>
           <LectureInfo>Adunesp</LectureInfo>
+        </RightSide>
+      </ScheduleRow>
+
+      <Separator />
+
+      <ScheduleRow>
+        <LeftSide>
+          <Hour color="#FF6700">21:00</Hour>
+        </LeftSide>
+
+        <RightSide>
+          <LectureName>
+            Minicurso: Análise de sinais de áudio musical
+          </LectureName>
+          <LectureInfo>Lab. 5 • Prof. Dr. Tiago Fernandes Tavares</LectureInfo>
+
+          <Separator />
+
+          <LectureName>
+            Minicurso: Desenvolvimento de APIs utilizando SpringBoot
+          </LectureName>
+          <LectureInfo>LIM I • Luiz Roberto Freitas</LectureInfo>
         </RightSide>
       </ScheduleRow>
 

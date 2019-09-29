@@ -27,6 +27,9 @@ import {
   SponsorLogo,
   SilverRow,
   SponsorLabel,
+  CopperRow,
+  CopperLabel,
+  CopperSquare,
   SquarsContainer,
   SilverSquare,
   SupportContainer,
@@ -55,11 +58,13 @@ import logoOpus from "~/assets/images/logo_opus.png";
 import logoHit from "~/assets/images/logo_hit_branco.png";
 import logoPca from "~/assets/images/logo_pca.png";
 import logoWdg from "~/assets/images/logo_wdg.png";
+import logoShift from "~/assets/images/shift.png";
 
 import logoPoty from "~/assets/images/support/poty.png";
 import logoHotBeach from "~/assets/images/support/hot_beach.png";
 import blucherLogo from "~/assets/images/support/blucher.png";
 import casaDoCodigoLogo from "~/assets/images/support/casa_do_codigo.png";
+import ccliLogo from "~/assets/images/support/ccli.png";
 
 import CollegeIcon from "~/assets/icons/minicurso-icon-gradient.png";
 import MicrophoneIcon from "~/assets/icons/palestra-gradient.png";
@@ -145,7 +150,8 @@ export default function Home() {
       id: "8"
     },
     {
-      name: "Entendendo Eventos do Mundo Real no Espaço e Tempo",
+      name:
+        "A verdade por detrás da história: Revelando fake news em massa e redes sociais",
       info: "Auditório A • Prof. Dr. Anderson de Rezende Rocha",
       day: "3",
       month: "10",
@@ -154,13 +160,23 @@ export default function Home() {
       id: "9"
     },
     {
-      name: "Palestra com título a ser confirmado",
-      info: "Auditório A",
+      name:
+        "Transformação Digital: RPA integrado com Inteligência Artificial, Chatbot e URA",
+      info: "Auditório A • Egmon Rethondin Sedano",
       day: "4",
       month: "10",
       year: "2019",
       hour: "10:00",
       id: "10"
+    },
+    {
+      name: "Utilização da ferramenta Simulink Hardware Support em robótica",
+      info: "Auditório A • Prof. Dr. Luiz Antonio Bássora",
+      day: "4",
+      month: "10",
+      year: "2019",
+      hour: "10:00",
+      id: "11"
     },
     {
       name: "Desenvolvimento de Robôs Autônomos para Jogar Futebol",
@@ -169,7 +185,7 @@ export default function Home() {
       month: "10",
       year: "2019",
       hour: "14:00",
-      id: "11"
+      id: "12"
     }
   ];
 
@@ -231,35 +247,34 @@ export default function Home() {
       <CarouselContainer>
         <ScrollCarousel horizontal showsHorizontalScrollIndicator={false}>
           <CarouselCard>
-            <CarouselTitle>Análise de sinais de áudio musical</CarouselTitle>
-            <CarouselSub>
-              Em breve mais conteúdo • Prof. Dr. Tiago Fernandes Tavares
-            </CarouselSub>
-          </CarouselCard>
-
-          <CarouselCard>
-            <CarouselTitle>
-              Cronograma de Projetos: Cálculo do tempo de um projeto ...
-            </CarouselTitle>
-            <CarouselSub>
-              Em breve mais conteúdo • Prof. Luiz Afonso Peccini
-            </CarouselSub>
-          </CarouselCard>
-
-          <CarouselCard>
             <CarouselTitle>
               Introdução ao Processamento de Linguagem Natural com Python
             </CarouselTitle>
-            <CarouselSub>
-              Em breve mais conteúdo • Prof. Dr. Henrique Dezani
-            </CarouselSub>
+            <CarouselSub>LIM I • Prof. Dr. Henrique Dezani</CarouselSub>
           </CarouselCard>
 
           <CarouselCard>
             <CarouselTitle>
               Desenvolvimento de APIs utilizando SpringBoot
             </CarouselTitle>
-            <CarouselSub>Em breve mais conteúdo</CarouselSub>
+            <CarouselSub>LIM I • Luiz Roberto Freitas</CarouselSub>
+          </CarouselCard>
+
+          <CarouselCard>
+            <CarouselTitle>Análise de sinais de áudio musical</CarouselTitle>
+            <CarouselSub>
+              Lab. 5 • Prof. Dr. Tiago Fernandes Tavares
+            </CarouselSub>
+          </CarouselCard>
+
+          <CarouselCard>
+            <CarouselTitle>
+              Cronograma de Projetos: Cálculo do tempo de um projeto utilizando
+              os diagramas CPM, Rede, AoA e AoN
+            </CarouselTitle>
+            <CarouselSub>
+              Laboratório de Robótica • Prof. Luiz Afonso Peccini
+            </CarouselSub>
           </CarouselCard>
         </ScrollCarousel>
       </CarouselContainer>
@@ -393,6 +408,13 @@ export default function Home() {
             </SilverSquare>
           </SquarsContainer>
         </SilverRow>
+
+        <CopperRow>
+          <CopperLabel>Cobre</CopperLabel>
+          <CopperSquare onPress={() => Linking.openURL("https://shift.com.br")}>
+            <SupportLogo source={logoShift} height={20} width={60} />
+          </CopperSquare>
+        </CopperRow>
       </SponsorsContainer>
 
       <SupportContainer>
@@ -439,6 +461,14 @@ export default function Home() {
               ></SupportLogo>
             </SupportSquare>
           </SquarsContainer>
+        </SupportRow>
+
+        <SupportRow>
+          <SupportSquare
+            onPress={() => Linking.openURL("http://www.cclinet.com.br/")}
+          >
+            <SupportLogo source={ccliLogo} height={65} width={65}></SupportLogo>
+          </SupportSquare>
         </SupportRow>
       </SupportContainer>
 
